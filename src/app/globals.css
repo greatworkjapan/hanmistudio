@@ -1,8 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Google Fonts: 角丸で柔らかい印象＋日本語対応 */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap');
 
-/* グローバルスタイルのカスタマイズ */
+/* Tailwind v4: 1行インポート */
+@import "tailwindcss";
+
+/* ベース */
+:root {
+  color-scheme: light;
+}
+
 body {
-  @apply bg-white text-gray-900;
+  @apply bg-white text-gray-900 antialiased font-sans;
 }
